@@ -1,0 +1,184 @@
+// out: ../../css/components/avatar.css, compress: true
+@import '../variables.less';
+// Name:            Avatar
+// Description:     Defines styles for avatar
+//
+// Component:       `avatar`
+//
+//
+// Element:       `avatar__*`
+//                `avatar__*`
+//
+// Modifiers:     `avatar--border-solid`
+//                `avatar--*`
+//
+// --------------------------------------------------------------------------
+// Block '.avatar'
+// --------------------------------------------------------------------------
+ .avatar{
+     position: relative;
+    display: inline-block;
+    height: @avatar-height;
+    line-height: @avatar-height;
+    width: @avatar-height;
+    min-width: @avatar-height;
+    border-radius: @avatar-height;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: @avatar-height;
+    vertical-align: middle;
+    max-width: none;
+    color: #fff;
+    font-weight: 100;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-size: cover;
+    object-fit: contain;
+    // overflow: hidden;
+    
+    // Modifivator '.avatar.avatar--drop'
+    // &&--drop{
+    //     border-radius: 8px @avatar-height @avatar-height @avatar-height;
+        
+    //     .avatar__img{
+    //         border-radius: 8px @avatar-height @avatar-height @avatar-height;
+    //     }
+    // }
+    
+    // Modifivator '.avatar.avatar--empty'
+    &&--empty{
+        // background: @avatar-background-empty;
+        background: #f1f1f1;
+        border: 3px solid @avatar-border-color-solid;
+        color: #333;
+
+        // &:after{
+        //     content: '';
+        //     position: relative;
+        //     color: #ddd;
+        // }
+    }
+
+    // -----------------------------------------------------
+    // All modificators
+    // -----------------------------------------------------
+
+    // Modifivator '.avatar.avatar--xlg'
+    &&--xxlg{
+        width: @avatar-height-xxlg;
+        min-width: @avatar-height-xxlg;
+        height: @avatar-height-xxlg;
+        line-height: @avatar-height-xxlg;
+        font-size: 5rem;
+        border-radius: @avatar-height-xxlg;
+    }
+    
+    // Modifivator '.avatar.avatar--xlg'
+    &&--xlg{
+        width: @avatar-height-xlarge;
+        min-width: @avatar-height-xlarge;
+        height: @avatar-height-xlarge;
+        line-height: @avatar-height-xlarge;
+        border-radius: @avatar-height-xlarge;
+        font-size: 3.5rem;
+    }
+    
+    // Modifivator '.avatar.avatar--lg'
+    &&--lg{
+        width: @avatar-height-large;
+        min-width: @avatar-height-large;
+        height: @avatar-height-large;
+        line-height: @avatar-height-large;
+        border-radius: @avatar-height-large;
+        font-size: 2rem;
+    }
+
+    // Modifivator '.avatar.avatar--md'
+    &&--md{
+        width: @avatar-height-medium;
+        min-width: @avatar-height-medium;
+        height: @avatar-height-medium;
+        line-height: @avatar-height-medium;
+        border-radius: @avatar-height-medium;
+        font-size: 1.5rem;
+    }
+
+    // Modifivator '.avatar.avatar--sm'
+    &&--sm{
+        width: @avatar-height-small;
+        min-width: @avatar-height-small;
+        height: @avatar-height-small;
+        line-height: @avatar-height-small;
+        border-radius: @avatar-height-small;
+        font-size: .85rem;
+        border-width: 2px;
+    }
+    // Modifivator '.avatar.avatar--mini'
+    &&--mini{
+        width: @avatar-height-mini;
+        min-width: @avatar-height-mini;
+        height: @avatar-height-mini;
+        line-height: @avatar-height-mini;
+        border-radius: @avatar-height-mini;
+        font-size: .5rem;
+        font-weight: 600;
+        border-width: 2px;
+    }
+
+    // Modificator 'avatar avatar--squared'
+    &&--squared{
+        border-radius: 4px !important;
+    }
+
+    // Modificator 'avatar avatar--squared'
+    &&--circle{
+        border-radius: 300px !important;
+    }
+
+    // Modificator `avatar--border-solid`
+    &--border-solid{
+        border: 0 4px 4px 4px solid @avatar-border-color-solid;
+    }
+
+    // -----------------------------------------------------
+    // All elements
+    // -----------------------------------------------------
+
+    // Element '.avatar .avatar__rating'
+    & &__rating{
+        display: block;
+        position: absolute;
+        bottom: -5px;
+        right: -5px;
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        border: 4px solid #fff;
+        background-color: #eee;
+        // border-radius: 20px 20px 0 20px;
+        // box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+
+        // Modificator '.avatar .avatar__rating.avatar__rating--green'
+        &.avatar__rating--green{
+            background-color: @color-green;
+        }
+        
+        // Modificator '.avatar .avatar__rating.avatar__rating--yellow'
+        &.avatar__rating--yellow{
+            background-color: @color-yellow;
+        }
+        
+        // Modificator '.avatar .avatar__rating.avatar__rating--red'
+        &.avatar__rating--red{
+            background-color: @color-red;
+        }
+    }
+    
+    // Element '.avatar .avatar__img'
+    & &__img{
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
+ }

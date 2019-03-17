@@ -1,0 +1,546 @@
+// Base
+@font-family-site:                    'GSans';
+// @font-family-site:                    'Open Sans', sans-serif;
+@font-family-icon:                    'icomoon';
+
+// Breakpoints
+
+@breakpoint-fluid:                    100%;
+@breakpoint-fluid-widget:             ~"calc(100% - 200px)";
+
+// @breakpoint-small:                 480px;
+// @breakpoint-medium:                768px;
+// @breakpoint-large:                 960px;
+// @breakpoint-xlarge:                1220px;
+
+@breakpoint-xsmall:                   320px;
+@breakpoint-small:                    768px;
+@breakpoint-medium:                   1024px;
+@breakpoint-large:                    1220px;
+@breakpoint-xlarge:                   1600px;
+
+@breakpoint-xsmall-max:               (@breakpoint-small - 1);
+@breakpoint-small-max:                (@breakpoint-medium - 1);
+@breakpoint-medium-max:               (@breakpoint-large - 1);
+@breakpoint-large-max:                (@breakpoint-xlarge - 1);
+@breakpoint-xlarge-max:               (@breakpoint-xlarge - 1);
+
+// New breadckpoint
+@breakpoint-xs-min:                   320px;
+@breakpoint-xs-max:                   (@breakpoint-sm-min - 1);
+@breakpoint-sm-min:                   768px;
+@breakpoint-sm-max:                   (@breakpoint-md-min - 1);
+@breakpoint-md-min:                   1024px;
+@breakpoint-md-max:                   (@breakpoint-lg-min - 1);
+@breakpoint-lg-min:                   1220px;
+@breakpoint-lg-max:                   (@breakpoint-xlg-min - 1);
+@breakpoint-xlg-min:                  1600px;
+
+// Color
+@color-blue:                          #2196f3;
+@color-red:                           #f44336;
+@color-green:                         #4caf50;
+// @color-green:                         #4caf50;
+// @color-green-dark:                 #4caf50;
+@color-green-dark:                    #558b2f;
+@color-yellow:                        #f9b949;
+@color-yellow-dark:                   #ff9800;
+@color-brown:                         #7b4f00;
+@color-gray:                          #8190a3;
+@color-white:                         #fff;
+
+
+// State
+@error-color:                         rgb(255, 95, 95);
+@danger-color:                        rgb(218, 49, 75);
+@active-color:                        rgb(249, 186, 72);
+@success-color:                       rgb(76, 175, 80);
+@yellow-color:                        rgb(251, 215, 62);
+@white-color:                         rgb(255, 255, 255);
+
+// Navbar
+@navbar-widht:                        250px;
+@navbar-background:                   rgb(53, 53, 53);
+@navbar-header-padding:               15px;
+@navbar-menu-background:              rgb(60, 60, 60);
+
+// Main
+@main-content-padding:                20px;
+
+// Breadcrumb
+@breadcrumb-background:               #fff;
+@breadcrumb-text-color:               #6F6F6F;
+@breadcrumb-padding:                  10px;
+@breadcrumbs-height:                  50px;
+
+// Panel
+@panel-background:                    rgb(255, 255, 255);
+@panel-border-radius:                 3px;
+@panel-title-margin:                  15px;
+@panel-padding:                       20px;
+@panel-padding-medium:                25px;
+@panel-padding-large:                 30px;
+
+// Topmenu
+@topmenu-height:                      50px;
+@topmenu-height-xsmall:               40px;
+@topmenu-background-xsmall:           rgb(249, 186, 72);
+@topmenu-color-xsmall:                #171717;
+
+// Avatar
+@avatar-height:                       40px;
+// @avatar-height-xlarge:             @avatar-height * 5;
+// @avatar-height-large:              @avatar-height * 3;
+// @avatar-height-medium:             @avatar-height / 1.33333333333333;
+// @avatar-height-small:              @avatar-height / 2;
+@avatar-height-xxlg:                  @avatar-height * 4;
+@avatar-height-xlarge:                @avatar-height * 3;
+@avatar-height-large:                 @avatar-height * 2;
+@avatar-height-medium:                @avatar-height * 1.5;
+@avatar-height-small:                 @avatar-height / 1.5;
+@avatar-height-mini:                  @avatar-height / 2;
+@avatar-height-micro:                 @avatar-height / 2.5;
+@avatar-font-size:                    1.5rem;
+@avatar-font-size-xxlg:               5rem;
+@avatar-font-size-xlarge:             3.5rem;
+@avatar-font-size-large:              2rem;
+@avatar-font-size-medium:             1rem;
+@avatar-background-empty:             #fff;
+@avatar-border-color-dashed:          #ddd;
+@avatar-border-color-solid:           #eee;
+
+// Page
+@page-header-height:                  54px;
+@page-header-background:              #eaeaea;
+@page-header-background-active:       rgb(249, 186, 72);
+@page-header-padding:                 25px;
+@page-element-height:                 28px;
+
+// Button
+@button-height:                       28px;
+@button-border-radius:                3px;
+@button-padding:                      12px;
+@button-background:                   rgb(255, 255, 255);
+@button-background-hover:             rgb(255, 236, 166);
+@button-border-color-hover:           rgba(153,122,0,.5);
+
+@button-select-caret-height:          20px;
+@button-select-caret-font-size:       20px;
+
+@button-group-margin:                 10px;
+
+// Input
+@input-padding:                       12px;
+@input-color:                         rgb(85, 85, 85);
+@input-border-radius:                 3px;
+@input-margin-bottom:                 10px;
+
+// Input size
+@input-height:                        40px;
+@input-height-small:                  25px;
+@input-height-medium:                 30px;
+
+@input-group-icon-height:             20px;
+@input-group-icon-font-size:          0.9rem;
+
+// Input padding
+@input-padding--small:                5px;
+@input-padding--medium:               7px;
+@input-padding:                       10px;
+@input-padding--big:                  15px;
+
+// Legend
+@legend-count-height:                 25px;
+
+// Margin
+@margin:                              30px;
+@margin-padding--small:               @margin-padding / 2;
+@margin-padding:                      20px;
+@margin-pading--big:                  (@margin-padding / 2) + @margin-padding;
+
+// Checkbox
+@checkbox-height:                     22px;
+@checkbox-font-size:                  14px;
+@checkbox-line-height:                14px;
+
+// Datetimepicker
+@dp-button-height:                    24px;
+@dp-button-line-height:               24px;
+@dp-button-font-size:                 13px;
+
+// Table
+@table-fixed-tr-55:                   55px;
+@table-margin-vertical:               15px;
+@table-padding-vertical:              12px;
+@table-padding-horizontal:            10px;
+@table-caption-color:                 #999;
+@table-caption-font-size:             12px;
+@table-striped-background:            #f5f5f5;
+@table-condensed-padding-vertical:    4px;
+@table-condensed-padding-horizontal:  8px;
+@table-hover-background:              #f7f7f7;
+@table-active-background:             @table-hover-background;
+@table-td-border-color:               #e5e5e5;
+@table-th-border-color:               #BFBFBF;
+
+// Filter
+@filter-top-height:                   62px;
+@filter-top-input-height:             24px;
+
+@filter-background:                   #fff;
+@filter-padding:                      20px;
+@filter-border-color:                 #dcdcdc;
+@filter-map-height:                   60px;
+@filter-map-width:                    260px;
+
+// Tasks
+@task-sub-element-height:             3%;
+
+// Footer
+@footer-height:                       220px;
+@footer-padding:                      20px;
+@footer-margin:                       20px;
+@footer-height-xsmall:                450px;
+
+// Cart
+@order-image-width:                   50px;
+
+// Cart
+@main-menu-cart-height:               35px;
+@main-menu-cart-width:                70px;
+@size-badge:                          16px;
+@color-danger:                        #ed5642;
+
+// Offcanvas
+@offcanvas-width:                     350px;
+
+// Aside menu
+@color-aside-menu-divider:            #414449;
+@aside-menu-background:               #353535;
+@aside-menu-color:                    #959595;
+@aside-menu-background-hover:         #2B2B2B;
+@aside-menu-logo-background:          #fff;
+@aside-menu-balance-padding:          14px;
+@aside-menu-balance-background:       #FF8D58;
+@aside-menu-list-padding:             15px;
+@aside-menu-sublist-padding:          10px;
+@aside-menu-width:                    200px;
+@aside-menu-small-width:              60px;
+@aside-menu-medium-width:             50px;
+
+// Modal
+@modal-z-index:                       1010;
+@modal-background:                    rgba(0,0,0,0.8);
+@modal-dialog-margin-vertical:        50px;
+@modal-dialog-padding:                20px;
+@modal-dialog-width:                  600px;
+@modal-dialog-background:             #fff;
+@modal-dialog-large-width:            930px;
+@modal-dialog-large-width-large:      1130px;
+@modal-header-margin-bottom:          15px;
+@modal-header-border-color:           #ddd;
+@modal-header-icon-height:            48px;
+@modal-header-action-height:          34px;
+@modal-footer-margin-top:             15px;
+@modal-caption-margin-bottom:         -10px;
+@modal-caption-color:                 #fff;
+
+@modal-padding:                       40px;
+
+// User-menu
+@user-menu-width:                     280px;
+
+// Nav
+@nav-height:                          60px;
+@nav-background:                      rgba(19, 19, 19, 0.8);
+@nav-color:                           #555;
+@nav-color--hover:                    #222;
+@nav-logo-width:                      120px;
+@nav-logo-height:                     35px;
+
+// Nav account
+@nav-account-background:              rgb(47,47,47);
+@nav-account-padding:                 10px;
+@nav-account-height:                  35px;
+
+// Icon
+@icon-height:                         20px;
+@icon-small-font-size:                150%;
+@icon-medium-font-size:               200%;
+@icon-large-font-size:                250%;
+
+@icon-small-vertical-align:           -10%;
+@icon-medium-vertical-align:          -16%;
+@icon-large-vertical-align:           -22%;
+
+// Drop down menu
+@dropdown-account-background:         #373f52;
+@dropdown-account-width:              400px;
+@dropdown-menu-divider-padding:       20px;
+@dropdown-menu-padding:               20px;
+@dropdown-arrow-top-height:           6px;
+
+// Link
+@link-margin:                         20px;
+
+// Text
+@text-color-muted:                    #999;
+@text-color-green:                    #8cc14c;
+@text-color-red:                      #EE3442;
+@text-color-blue:                     #0091ca;
+@text-color-yellow:                   #fbd73e;
+@text-color-orange:                   #FF8800;
+
+// Pipeline
+@pipeline-background:                 #f4f4f4;
+@pipeline-height:                     50px;
+
+// Upload
+@upload-progress-height:              10px;
+@upload-progress-height-xs:           (@upload-progress-height / 2);
+
+// Panel
+@panel-title-margin-bottom:           15px;
+@panel-title-font-size:               18px;
+@panel-title-line-height:             24px;
+@panel-title-font-weight:             normal;
+@panel-title-color:                   #444;
+@panel-title-text-transform:          none;
+@panel-teaser-margin-bottom:          @panel-title-margin-bottom;
+@panel-white-background:              #fff;
+@panel-box-padding:                   15px;
+@panel-box-background:                #f5f5f5;
+@panel-box-color:                     #444;
+@panel-box-hover-color:               @panel-box-color;
+@panel-box-title-color:               #444;
+@panel-box-badge-top:                 10px;
+@panel-box-badge-right:               @panel-box-badge-top;
+@panel-box-teaser-margin:             -@panel-box-padding;
+@panel-box-primary-background:        #ebf7fd;
+@panel-box-primary-color:             #2d7091;
+@panel-box-primary-hover-color:       @panel-box-primary-color;
+@panel-box-primary-title-color:       #2d7091;
+@panel-info-background:               #d9edf7;
+@panel-info-border-color:             #bce8f1;
+@panel-info-color:                    #31708f;
+@pabel-dashed-border-color:           #ddd;
+@panel-box-secondary-background:      #eee;
+@panel-box-secondary-color:           #444;
+@panel-box-secondary-hover-color:     @panel-box-secondary-color;
+@panel-box-secondary-title-color:     #444;
+@panel-hover-padding:                 15px;
+@panel-hover-color:                   #444;
+@panel-hover-hover-background:        #f5f5f5;
+@panel-hover-hover-color:             #444;
+@panel-hover-badge-top:               10px;
+@panel-hover-badge-right:             @panel-hover-badge-top;
+@panel-hover-teaser-margin:           -@panel-hover-padding;
+@panel-header-title-padding:          10px;
+@panel-header-title-border:           #ddd;
+@panel-header-title-border-width:     1px;
+@panel-header-title-color:            #444;
+@panel-space-padding:                 30px;
+@panel-divider-gutter:                25px;
+@panel-divider-gutter-large:          35px;
+@panel-divider-border:                #ddd;
+@panel-divider-border-width:          1px;
+@panel-border-color:                  #e8e8e8;
+@panel-border-bottom-color:           #eee;
+@panel-border-yelow-color:            #fbd73e;
+
+// Photographer
+@photographer-population-new-height:  82px;
+
+// Button
+@button-height:                       30px;
+@button-mini-height:                  20px;
+@button-small-height:                 25px;
+@button-large-height:                 40px;
+@button-line-height:                  30px;
+@button-mini-line-height:             20px;
+@button-small-line-height:            25px;
+@button-large-line-height:            40px;
+@button-mini-font-size:               10px;
+@button-small-font-size:              12px;
+@button-large-font-size:              16px;
+@button-padding-horizontal:           12px;
+@button-mini-padding-horizontal:      6px;
+@button-small-padding-horizontal:     10px;
+@button-large-padding-horizontal:     15px;
+@button-font-size:                    1rem;
+@button-background:                   #fff;
+@button-color:                        #444;
+@button-hover-background:             #f5f5f5;
+@button-hover-color:                  #444;
+@button-active-background:            #ddd;
+@button-active-color:                 #444;
+@button-border-color:                 #dcdcdc;
+@button-border-radius:                4px;
+@button-rounded-height:               32px;
+@button-rounded-small-height:         27px;
+@button-rounded-mini-height:          22px;
+@button-delete-color:                 rgba(248, 102, 103, 0.6);
+@button-delete-hover-color:           rgba(248, 102, 103, 1);
+@button-primary-background:           #00a8e6;
+@button-black-background:             #000;
+@button-primary-color:                #fff;
+@button-primary-hover-background:     #35b3ee;
+@button-black-hover-background:       #000;
+@button-primary-hover-color:          #fff;
+@button-primary-active-background:    #0091ca;
+@button-black-active-background:      #000;
+@button-primary-active-color:         #fff;
+@button-radio-border:                 #dcdcdc;
+@button-radio-border-active:          rgba(24, 162, 75, 1);
+@button-radio-border-hover:           rgba(24, 162, 75, 0.4);
+@button-radio-img-selected:           rgba(24, 162, 75, 0.7);
+@button-radio-img-unselected:         rgba(248, 102, 103, 0.7);
+@button-success-color:                #fff;
+@button-success-hover-background:     rgb(83, 183, 88);
+@button-success-hover-color:          #fff;
+@button-success-active-background:    rgba(24, 162, 75, 0.8);
+@button-success-active-color:         #fff;
+@button-footer-success:               #49ae65;
+
+@button-footer-height:                60px;
+@button-footer-xs-height:             40px;
+
+@button-footer-background:            #eee;
+
+@button-footer-font-size:             1.25rem;
+@button-footer-xs-font-size:          0.9rem;
+
+@button-footer-line-height:           1.5rem;
+@button-footer-xs-line-height:        1.2rem;
+
+@button-danger-hover-background:      #EC452F;
+@button-danger-active-background:     #F16A58;
+@button-warning-background:           #ff4729;
+@button-warning-hover-background:     #ff5d43;
+@button-disabled-background:          #f5f5f5;
+@button-disabled-color:               #999;
+@button-link-color:                   #6b6b6b;
+@button-link-hover-color:             #424242;
+@button-link-hover-text-decoration:   underline;
+@button-link-disabled-color:          #999;
+@button-muted:                        rgba(228,228,228,0.4);
+@button-muted-hover:                  rgba(228,228,228,0.7);
+@button-muted-active:                 rgba(228,228,228,1);
+@button-radio-img-height:             80px;
+@button-radio-img-width:              90%;
+
+// Btn ~ button
+@btn-padding:                         30px;
+@btn-line-height:                     40px;
+
+// Search
+@search-height:                       40px;
+
+// Sidebar
+@sidebar-background:                  #f5f5f5;
+@sidebar-width:                       300px;
+@sidebar-width-md:                    @sidebar-width * 1.5; 
+@sidebar-width-lg:                    @sidebar-width * 2; 
+// [Size]
+@sidebar-width--xs:                   80%;
+
+// Route-menu
+@rm-width:                            300px;
+@rm-padding:                          20px;
+
+// Badge
+// @badge-background:                 #00a8e6;
+@badge-background:                    #eee;
+@badge-padding-horizontal:            5px;
+@badge-margin-left:                   3px;
+@badge-font-size:                     10px;
+@badge-font-weight:                   600;
+@badge-line-height:                   15px;
+@badge-color:                         #444;
+@badge-text-transform:                none;
+@badge-hover-color:                   #fff;
+@badge-border-radius:                 3px;
+
+@badge-notification-font-size:        12px;
+@badge-notification-line-height:      18px;
+
+@badge-background-gray:               #8190A3;
+@badge-background-success:            #8cc14c;
+@badge-background-warning:            #faa732;
+@badge-background-yellow:             @color-yellow;
+@badge-background-blue:               @color-blue;
+@badge-background-purple:             #7571d6;
+@badge-background-danger:             #da314b;
+
+// Input
+@input-margin:                        10px;
+@input-text-color:                    #333;
+@input-background:                    #fff;
+@input-border-color:                  #ddd;
+@input-border-bottom-color:           #ddd;
+@input-border-bottom-color-active:    #FFC716;
+@input-search-border-color:           #dadada;
+@input-border-radius:                 0;
+@input-border-radius--big:            100px;
+@input-tags-border-color:             #bdbdbd;
+
+// Label
+@label-font-size:                     0.625rem;
+@label-line-height:                   @label-font-size + 0.25rem;
+@label-color:                         #828282;
+@label-margin:                        5px;
+
+// File manager
+@fm-top-bar-padding:                  10px;
+@fm-bottom-bar-padding:               15px;
+
+// Block
+@block-padding-vertical:              20px;
+@block-padding-vertical-large:        50px;
+@block-large-padding-vertical:        @block-padding-vertical;
+@block-large-padding-vertical-medium: @block-padding-vertical-large;
+@block-large-padding-vertical-large:  100px;
+@block-default-background:            #fff;
+@block-muted-background:              #f9f9f9;
+@block-primary-background:            #00a8e6;
+@block-secondary-background:          #222;
+
+// Top menu
+@top-menu-height:                     50px;
+
+// Balance
+@balance-filter-padding:              15px;
+@balance-income-padding:              30px;
+@balance-day-padding:                 30px;
+@balance-income-padding:              30px;
+@balance-income-status-height:        8px;
+@balance-income-status-color:         #49ae65;
+@balance-outcome-status-color:        #EC452F;
+@balance-new-height:                  20px;
+@balance-planer-width:                85px;
+
+// Placeholder
+@placeholder-margin-vertical:         15px;
+@placeholder-padding:                 20px;
+@placeholder-border:                  #ddd;
+@placeholder-border-width:            2px;
+@placeholder-background:              #fafafa;
+@placeholder-color:                   #444;
+@placeholder-large-padding-vertical:  80px;
+@placeholder-background-success:      rgba(104, 179, 0, 0.25);
+@placeholder-border-success-color:    rgba(104, 179, 0, 1);
+@placeholder-border-success-width:    2px;
+
+// CallHandler
+@ch-avatar-height:                    50px;
+@ch-call-height:                      40px;
+@ch-content-height:                   60px;
+@ch-content-width:                    270px;
+@ch-card-height:                      20px;
+@ch-penalty-height:                   20px;
+
+// Cal-Header ~ for iFrame calendar
+@cal-header-height:                   60px;
+
+// Calendar mobile
+@calendar-mobile-padding: 15px;
