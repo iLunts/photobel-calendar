@@ -29,7 +29,12 @@
             "styles": [
               "web-src/less/calendar.less",
               "web-src/less/Components/reset.less",
+              "web-src/less/Components/icon.less",
+              "web-src/less/Components/grid.less",
+              "web-src/less/Components/flex.less",
               "web-src/less/Components/avatar.less",
+              "web-src/less/Components/toggle.less",
+              "web-src/less/Components/badge.less",
               "web-src/less/Components/button.less"
             ],
             "scripts": []

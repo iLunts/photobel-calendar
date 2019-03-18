@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.header .header__user {
+  display: flex;
+  align-items: center;
+}
+.header .header__user-avatar {
+  margin-right: 10px;
+}
+.header .header__user-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.header .header__user-phone {
+  font-weight: 400;
+  font-size: .8rem;
+  color: #999;
+}

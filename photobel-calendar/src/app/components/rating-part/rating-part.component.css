@@ -1,0 +1,17 @@
+.rating .rating__icon {
+  display: inline-block;
+  vertical-align: middle;
+  color: #999;
+}
+.rating .rating__icon.icon--fill {
+  color: #f9b949;
+}
+.rating .rating__count {
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: .7rem;
+  line-height: 1;
+  color: #777;
+  margin-left: 10px;
+}

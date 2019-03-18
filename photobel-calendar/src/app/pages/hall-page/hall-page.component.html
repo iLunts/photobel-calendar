@@ -1,0 +1,45 @@
+<div class="hall">
+
+  <div class="flex flex--middle">
+    <!-- <button class="btn btn--white btn--square">
+      <i class="btn__icon" [inlineSVG]="'assets/svg/pack/arrow-left.svg'"></i>
+    </button> -->
+    <div>
+      <h2 class="calendar__title">Залы</h2>
+      <h3 class="calendar__desc">Выберите зал из списка ниже</h3>
+    </div>
+  </div>
+  
+  <div class="hall__list">
+    <div class="hall__item" *ngFor="let item of hallArray; let i = index">
+      <div class="hall__content">
+        <div class="hall__img">
+          <img class="hall__img-img" [src]="item?.imageUrl" alt="">
+        </div>
+        <div class="">
+          <p class="hall__title">{{item?.title}}</p>
+          <p class="hall__desc">{{item?.desc}}</p>
+          <div class="hall__rating">
+            <app-rating-part [rating]="item.rating"></app-rating-part>
+          </div>
+        </div>
+      </div>
+
+      <div class="toggle">
+        <input class="toggle__input" type="checkbox" id="{{i}}">
+        <label class="toggle__label" for="{{i}}"></label>
+      </div>
+      <!-- <button class="btn btn--square btn--gray">
+        <i class="btn__icon" [inlineSVG]="'assets/svg/pack/help-circle.svg'"></i>
+      </button> -->
+    </div>
+  </div>
+
+  <div class="hall__select">
+    <button class="btn btn--link">Отменить</button>
+    <button class="btn btn--yellow">Выбрать</button>
+  </div>
+  
+  <!-- Teaser part -->
+  <app-teaser-part></app-teaser-part>
+</div>

@@ -1,0 +1,27 @@
+@import '../../../../web-src/less/Variables.less';
+// ------------------------------------------------------------------------
+// Block '.rating'
+// ------------------------------------------------------------------------
+.rating{
+
+  & &__icon{
+    display: inline-block;
+    vertical-align: middle;
+    color: #999;
+
+    &.icon--fill{
+      color: @color-yellow;
+    }
+  }
+
+  & &__count{
+    display: inline-block;
+    vertical-align: middle;
+
+    font-weight: 300;
+    font-size: .7rem;
+    line-height: 1;
+    color: #777;
+    margin-left: 10px;
+  }
+}

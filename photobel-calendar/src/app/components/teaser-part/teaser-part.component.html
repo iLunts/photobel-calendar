@@ -1,0 +1,16 @@
+<div class="teaser">
+  <div class="teaser__item" *ngFor="let item of calendarSales">
+    
+    <div class="teaser__img">
+      <img class="teaser__img-img" [src]="item.teaserUrl" alt="">
+      <span class="teaser__img-badge" *ngIf="item.badge">{{item?.badge}}</span>
+    </div>
+
+    <div class="teaser__content">
+      <p class="teaser__count">Количество мест: {{item?.count}}</p>
+      <p class="teaser__title">{{item?.title}}</p>
+      <p class="teaser__desc">{{ (item?.desc.length>100)? (item?.desc | slice:0:200)+' ...':(item?.desc) }}</p>
+    </div>
+    
+  </div>
+</div>

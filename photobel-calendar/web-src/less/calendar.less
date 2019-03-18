@@ -32,3 +32,92 @@
 html, body{
   background-color: #f1f1f1;
 }
+
+// -------------------------------------------------------
+// Block '.calendar'
+// -------------------------------------------------------
+.calendar {
+  // position: relative;
+  max-width: 400px;
+  background-color: #fff;
+  padding: @calendar-mobile-padding * 2;
+
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  overflow-y: auto;
+
+  // Element '.calendar .calendar__title'
+  & &__title {
+    font-size: 1.7rem;
+    font-weight: 900;
+    color: #222;
+    line-height: 2rem;
+  }
+
+  // Element '.calendar .calendar__desc'
+  & &__desc {
+    font-size: .8rem;
+    font-weight: 600;
+    color: #999;
+    line-height: 1.2rem;
+  }
+
+  // Element '.calendar .calendar__filter'
+  & &__filter {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 0 @calendar-mobile-padding;
+    margin: 0 -@calendar-mobile-padding 30px;
+  }
+
+  // Element '.calendar .calendar__quick'
+  // & &__quick {
+  //   margin: 25px 0;
+
+  //   // Element '.calendar .calendar__quick-title'
+  //   &-title {
+  //     color: #999;
+  //     font-weight: 600;
+  //     font-size: .8rem;
+  //     line-height: 1;
+  //     margin: 0 0 10px 0;
+  //   }
+
+  //   // Element '.calendar .calendar__quick-list'
+  //   &-list {
+  //     display: flex;
+  //     align-items: center;
+  //     flex-wrap: nowrap;
+
+  //     overflow-x: auto;
+  //   }
+
+  //   // Element '.calendar .calendar__quick-item'
+  //   &-item {
+  //     display: inline-flex;
+  //     padding: 20px;
+  //     background-color: #f1f1f1;
+  //     border-radius: 4px;
+  //   }
+  // }
+}
+
+// ------------------------------------------------------------------------
+// size : xSmall
+// ------------------------------------------------------------------------
+@media (min-width: @breakpoint-xs-min) and (max-width: @breakpoint-xs-max) {
+
+  // -------------------------------------------------------
+  // Block '.calendar'
+  // -------------------------------------------------------
+  .calendar {
+    width: 100%;
+    max-width: 100%;
+    padding: @calendar-mobile-padding;
+  }
+}

@@ -1,67 +1,56 @@
-<div class="calendar">
-  <div class="calendar__header">
+<!-- <div class="calendar"> -->
 
-    <div class="calendar__user">
-      <span class="calendar__user-avatar avatar avatar--empty avatar--sm">R</span>
-      <p class="calendar__user-name">Роман Лунцевич</p>
+  <!-- <div class="calendar__filter">
+    <button class="btn btn--sm btn--gray">
+      <i class="btn__icon" [inlineSVG]="'assets/svg/pack/camera.svg'"></i>
+      <span class="btn__text">Залы</span>
+    </button>
+    <button class="btn btn--sm btn--gray">
+      <i class="btn__icon" [inlineSVG]="'assets/svg/pack/briefcase.svg'"></i>
+      <span class="btn__text">Услуги</span>
+    </button>
+    <button class="btn btn--sm btn--gray">
+      <i class="btn__icon" [inlineSVG]="'assets/svg/pack/zap.svg'"></i>
+      <span class="btn__text">Палево</span>
+    </button>
+    <button class="btn btn--sm btn--gray">
+      <i class="btn__icon" [inlineSVG]="'assets/svg/pack/search.svg'"></i>
+      <span class="btn__text">Палево</span>
+    </button>
+    <button class="btn btn--sm btn--gray">
+      <i class="btn__icon" [inlineSVG]="'assets/svg/pack/award.svg'"></i>
+      <span class="btn__text">Награды</span>
+    </button>
+  </div> -->
+
+  <!-- <div class="calendar__quick">
+    <p class="calendar__quick-title">Перечень услуг фотостудии</p>
+    <div class="calendar__quick-list">
+      
     </div>
-
-    <div class="calendar__header-filter">
-      <button class="btn btn--sm btn--gray">
-        <i class="btn__icon" [inlineSVG]="'assets/svg/pack/camera.svg'"></i>
-        <span class="btn__text">Залы</span>
-      </button>
-      <button class="btn btn--sm btn--gray">
-        <i class="btn__icon" [inlineSVG]="'assets/svg/pack/briefcase.svg'"></i>
-        <span class="btn__text">Услуги</span>
-      </button>
-      <button class="btn btn--sm btn--gray">
-        <i class="btn__icon" [inlineSVG]="'assets/svg/pack/zap.svg'"></i>
-        <span class="btn__text">Палево</span>
-      </button>
-      <button class="btn btn--sm btn--gray">
-        <i class="btn__icon" [inlineSVG]="'assets/svg/pack/search.svg'"></i>
-        <span class="btn__text">Палево</span>
-      </button>
-      <button class="btn btn--sm btn--gray">
-        <i class="btn__icon" [inlineSVG]="'assets/svg/pack/award.svg'"></i>
-        <span class="btn__text">Награды</span>
-      </button>
+    <div class="calendar__quick-item" randomBack>
+      123123
     </div>
+  </div> -->
 
-    <div class="calendar__quick">
-      <p class="calendar__quick-title">Перечень услуг фотостудии</p>
-      <div class="calendar__quick-list">
-        
-      </div>
-      <div class="calendar__quick-item" randomBack>
-        123123
-      </div>
-    </div>
+  <h2 class="calendar__title">
+    Мастер бронирования
+  </h2>
+  <h3 class="calendar__desc">
+    Мастер бронирования ваших потребностей
+  </h3>
 
-    <!-- <h2 class="calendar__title">
-      Популярное у фотостудии
-    </h2>
-    <h3 class="calendar__desc">
-      Подборки популярного среди клиентов
-    </h3> -->
+  <!-- Category -->
+  <app-category-part></app-category-part>
 
-    <h2 class="calendar__title">
-      Подбор по категориям
-    </h2>
-    <h3 class="calendar__desc">
-      Мастер бронирования ваших потребностей
-    </h3>
+  <h2 class="calendar__title">
+    Популярные события
+  </h2>
+  <h3 class="calendar__desc">
+    которые позволят Вам сэкономить
+  </h3>
+  
+  <!-- Teaser population services -->
+  <app-teaser-part></app-teaser-part>
 
-    <div class="calendar-cat">
-      <div class="calendar-cat__item" *ngFor="let item of calendarCat">
-        <div class="calendar-cat__content">
-          <i class="calendar-cat__icon" [inlineSVG]="'assets/svg/pack/camera.svg'" [ngStyle]="{'background-color': item.backColor}"></i>
-          <p class="calendar-cat__name">{{item.name}}</p>
-        </div>
-        <i class="calendar-cat__more" [inlineSVG]="'assets/svg/pack/chevron-right.svg'"></i>
-      </div>
-    </div>
-
-  </div>
-</div>
+<!-- </div> -->

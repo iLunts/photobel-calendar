@@ -1,0 +1,96 @@
+@import '../../../../web-src/less/Variables.less';
+// ------------------------------------------------------------------------
+// Block '.category'
+// ------------------------------------------------------------------------
+.category {
+  position: relative;
+  margin: 15px 0;
+
+  // Element '.category .category__item'
+  & &__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+
+    // Element '.category .category__item:before'
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50px;
+      right: 40px;
+      // right: 0;
+      bottom: 0;
+      // border-bottom: .5px solid #f1f1f1;
+      border-bottom: 1px solid #f1f1f1;
+    }
+  }
+
+  // Element '.category .category__link'
+  & &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  // Element '.category .category__content'
+  & &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  // Element '.category .category__icon'
+  & &__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    color: #fff;
+    margin-right: 10px;
+  }
+
+  // Element '.category .category__selected'
+  & &__selected {
+    margin-right: 10px;
+  }
+
+  // Element '.category .category__more'
+  & &__more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #ddd;
+  }
+
+  // Element '.category .category__name'
+  & &__name {
+    display: block;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  // Element '.category .category__desc'
+  & &__desc {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: .7rem;
+    line-height: 1;
+    color: #999;
+  }
+}

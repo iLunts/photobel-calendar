@@ -1,0 +1,49 @@
+.hall .hall__list {
+  margin-top: 20px;
+}
+.hall .hall__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hall .hall__item + .hall__item {
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.hall .hall__content {
+  display: flex;
+  align-items: center;
+}
+.hall .hall__img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f1f1ff;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+.hall .hall__img-img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.hall .hall__title {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1;
+  color: #222;
+}
+.hall .hall__desc {
+  font-weight: 600;
+  font-size: .8rem;
+  line-height: 1;
+  color: #777;
+}
+.hall .hall__select {
+  margin: 20px 0;
+  text-align: center;
+}
