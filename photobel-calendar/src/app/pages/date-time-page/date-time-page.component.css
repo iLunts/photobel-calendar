@@ -1,0 +1,98 @@
+.datetime .datetime__date {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin: 20px -10px;
+  padding: 0 10px 10px;
+}
+.datetime .datetime__date-item {
+  display: block;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  padding: 6px;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+}
+.datetime .datetime__date-item.active {
+  background-color: #2196f3;
+}
+.datetime .datetime__date-item.active .datetime__date-numb,
+.datetime .datetime__date-item.active .datetime__date-day {
+  color: #fff;
+}
+.datetime .datetime__date-item + .datetime__date-item {
+  margin-left: 5px;
+}
+.datetime .datetime__date-numb {
+  display: block;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.datetime .datetime__date-day {
+  display: block;
+  font-weight: 400;
+  font-size: .7rem;
+  color: #777;
+}
+.datetime .datetime__timeline {
+  background-color: #fafafa;
+  margin: 20px -10px;
+  padding: 20px 10px 10px;
+}
+.datetime .datetime__timeline-panel {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 6px;
+  margin: 10px 0;
+  padding: 10px;
+}
+.datetime .datetime__timeline-panel.disabled {
+  background-color: transparent;
+}
+.datetime .datetime__timeline-panel.disabled .datetime__timeline-time,
+.datetime .datetime__timeline-panel.disabled .datetime__timeline-desc {
+  color: #999;
+}
+.datetime .datetime__timeline-panel.active {
+  background-color: #fff;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.05);
+}
+.datetime .datetime__timeline-panel.selected {
+  background-color: #4caf50;
+  color: #fff;
+}
+.datetime .datetime__timeline-panel.selected .datetime__timeline-badge {
+  border-color: #fff !important;
+}
+.datetime .datetime__timeline-panel.selected .datetime__timeline-time,
+.datetime .datetime__timeline-panel.selected .datetime__timeline-desc {
+  color: #fff;
+}
+.datetime .datetime__timeline-badge {
+  margin-right: 10px;
+  margin-top: 4px;
+  width: 8px;
+  height: 8px;
+}
+.datetime .datetime__timeline-time {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+.datetime .datetime__timeline-desc {
+  color: #999;
+  font-size: .8rem;
+  line-height: 1;
+  margin: 0;
+}

@@ -3,7 +3,8 @@
   display: flex;
   align-items: flex-start;
   overflow-x: auto;
-  margin: 20px -10px 20px 0;
+  margin: 20px -10px;
+  padding: 0 10px;
 }
 .teaser .teaser__item {
   display: block;

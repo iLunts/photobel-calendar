@@ -1,0 +1,146 @@
+@import '../../../../web-src/less/Variables.less';
+// ------------------------------------------------------------------------
+// Block '.datetime'
+// ------------------------------------------------------------------------
+.datetime {
+
+  // Element '.datetime .datetime__date'
+  & &__date{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 20px -@calendar-mobile-padding;
+    padding: 0 @calendar-mobile-padding 10px;
+    
+    // Element '.datetime .datetime__date-item'
+    &-item{
+      display: block;
+      display: flex;
+      flex-shrink: 0;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+      width: 50px;
+      height: 50px;
+      padding: 6px;
+      font-size: 1rem;
+      text-align: center;
+      border-radius: 8px;
+      background-color: #f1f1f1;
+      
+      // Element '.datetime .datetime__date-item.active'
+      &.active{
+        background-color: @color-blue;
+        
+        // Element '.datetime .datetime__date-item.active .datetime__date-numb'
+        // Element '.datetime .datetime__date-item.active .datetime__date-day'
+        .datetime__date-numb,
+        .datetime__date-day{
+          color: #fff;
+        }
+      }
+      
+      // Element '.datetime .datetime__date-item.active + .datetime__date-item'
+      + .datetime__date-item{
+        margin-left: 5px;
+      }
+    }
+    
+    // Element '.datetime .datetime__date-numb'
+    &-numb{
+      display: block;
+      font-weight: 900;
+      font-size: 1.2rem;
+      
+    }
+    // Element '.datetime .datetime__date-day'
+    &-day{
+      display: block;
+      font-weight: 400;
+      font-size: .7rem;
+      color: #777;
+      
+    }
+  }
+  
+  // Element '.datetime .datetime__timeline'
+  & &__timeline{
+    background-color: #fafafa;
+    margin: 20px -@calendar-mobile-padding;
+    padding: 20px @calendar-mobile-padding 10px;
+    
+    // Element '.datetime .datetime__timeline-panel'
+    &-panel{
+      display: flex;
+      align-items: flex-start;
+      
+      background-color: #fff;
+      border-radius: 6px;
+      margin: 10px 0;
+      padding: 10px;
+      
+      // Element '.datetime .datetime__timeline-panel.disabled'
+      &.disabled{
+        background-color: transparent;
+        
+        // Element '.datetime .datetime__timeline-panel.disabled .datetime__timeline-time'
+        // Element '.datetime .datetime__timeline-panel.disabled .datetime__timeline-desc'
+        .datetime__timeline-time,
+        .datetime__timeline-desc {
+          color: #999;
+        }
+      }
+      
+      // Element '.datetime .datetime__timeline-panel.active'
+      &.active{
+        background-color: #fff;
+        box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .05);
+      }
+      
+      // Element '.datetime .datetime__timeline-panel.selected'
+      &.selected{
+        background-color: @color-green;
+        color: #fff;
+        
+        // Element '.datetime .datetime__timeline-panel.selected .datetime__timeline-badge'
+        .datetime__timeline-badge{
+          border-color: #fff !important;
+        }
+        
+        // Element '.datetime .datetime__timeline-panel.selected .datetime__timeline-time'
+        // Element '.datetime .datetime__timeline-panel.selected .datetime__timeline-desc'
+        .datetime__timeline-time,
+        .datetime__timeline-desc{
+          color: #fff;
+        }
+      }
+    }
+    
+    // Element '.datetime .datetime__timeline-badge'
+    &-badge{
+      margin-right: 10px;
+      margin-top: 4px;
+      width: 8px;
+      height: 8px;
+    }
+    
+    // Element '.datetime .datetime__timeline-time'
+    &-time{
+      color: #444;
+      font-size: 1rem;
+      line-height: 1;
+      font-weight: 600;
+      margin: 0 0 10px 0;
+    }
+
+    // Element '.datetime .datetime__timeline-desc'
+    &-desc{
+      color: #999;
+      font-size: .8rem;
+      line-height: 1;
+      margin: 0;
+    }
+  }
+}

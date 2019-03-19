@@ -1,3 +1,66 @@
-<p>
-  photographer-page works!
-</p>
+<div class="photographer">
+
+  <div class="calendar__filter">
+    <button class="btn btn--gray">
+      <!-- <i class="btn__icon" [inlineSVG]="'assets/svg/pack/camera.svg'"></i> -->
+      <span class="btn__text">Свадебная</span>
+    </button>
+    <button class="btn btn--gray">
+      <!-- <i class="btn__icon" [inlineSVG]="'assets/svg/pack/briefcase.svg'"></i> -->
+      <span class="btn__text">Детская</span>
+    </button>
+    <button class="btn btn--gray">
+      <!-- <i class="btn__icon" [inlineSVG]="'assets/svg/pack/zap.svg'"></i> -->
+      <span class="btn__text">Документальная</span>
+    </button>
+    <button class="btn btn--gray">
+      <!-- <i class="btn__icon" [inlineSVG]="'assets/svg/pack/search.svg'"></i> -->
+      <span class="btn__text">Просто</span>
+    </button>
+    <button class="btn btn--gray">
+      <!-- <i class="btn__icon" [inlineSVG]="'assets/svg/pack/award.svg'"></i> -->
+      <span class="btn__text">Только награды</span>
+    </button>
+  </div>
+
+  <div class="flex flex--middle">
+    <!-- <button class="btn btn--white btn--square">
+      <i class="btn__icon" [inlineSVG]="'assets/svg/pack/arrow-left.svg'"></i>
+    </button> -->
+    <div>
+      <h2 class="calendar__title">Фотографы</h2>
+      <h3 class="calendar__desc">Выберите кто будет фотографировать</h3>
+    </div>
+  </div>
+
+  <div class="photographer__list">
+    <div class="photographer__item" *ngFor="let item of photographerArray; let i = index">
+      <div class="photographer__content">
+        <div class="photographer__img">
+          <img class="photographer__img-img" [src]="item?.imageUrl" alt="">
+        </div>
+        <div class="">
+          <p class="photographer__title">{{item?.lastName}} {{item?.firstName}}</p>
+          <p class="photographer__desc">{{item?.category}}</p>
+          <div class="photographer__rating">
+            <app-rating-part [rating]="item.rating"></app-rating-part>
+          </div>
+        </div>
+      </div>
+
+      <div class="toggle">
+        <input class="toggle__input" type="checkbox" id="{{i}}">
+        <label class="toggle__label" for="{{i}}"></label>
+      </div>
+      <!-- <button class="btn btn--square btn--gray">
+        <i class="btn__icon" [inlineSVG]="'assets/svg/pack/help-circle.svg'"></i>
+      </button> -->
+    </div>
+  </div>
+
+  <div class="photographer__select">
+    <button class="btn btn--link" [routerLink]="['/']">Отменить</button>
+    <button class="btn btn--yellow btn--lg" [routerLink]="['/']">Выбрать</button>
+  </div>
+
+</div>

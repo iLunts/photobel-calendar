@@ -1,3 +1,26 @@
-<p>
-  date-time-page works!
-</p>
+<div class="datetime">
+
+  <h2 class="calendar__title">Март 2019</h2>
+  <h3 class="calendar__desc">Выберите удобно для Вас время</h3>
+  
+  <!-- Dates list -->
+  <div class="datetime__date">
+    <button class="datetime__date-item" *ngFor="let date of dateList">
+      <span class="datetime__date-numb">{{date?.numb}}</span>
+      <span class="datetime__date-day">{{date?.day}}</span>
+    </button>
+  </div>
+
+  <!-- Timline list -->
+  <div class="datetime__timeline">
+    <div class="datetime__timeline-panel" [ngClass]="item.state ? 'active' : 'disabled'" *ngFor="let item of timeArray; let i = index">
+      <span class="datetime__timeline-badge badge badge--circle badge--border badge--mini" [ngClass]="item.state ? 'badge--green' : 'badge--red'"></span>
+      <div class="flex flex--middle flex--space-between">
+        <div>
+          <p class="datetime__timeline-time">{{item?.start}} - {{item?.end}}</p>
+          <p class="datetime__timeline-desc">{{item.state ? 'Свободное время' : 'Занятое время'}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
